@@ -3,6 +3,10 @@
 Datadog API Key Enumeration Script
 Enumerates what resources and data a Datadog API key has access to.
 
+Author: l0lsec
+GitHub: https://github.com/l0lsec
+Version: 1.0.0
+
 Usage:
     python3 datadog_enum.py <API_KEY> [APP_KEY] [--region REGION]
     
@@ -10,6 +14,10 @@ Examples:
     python3 datadog_enum.py abc123def456
     python3 datadog_enum.py abc123def456 xyz789app --region eu
 """
+
+__author__ = "l0lsec"
+__version__ = "1.0.0"
+__github__ = "https://github.com/l0lsec"
 
 import requests
 import json
@@ -453,10 +461,26 @@ Environment Variables:
     
     print(f"""
 {Colors.BOLD}{Colors.CYAN}
-╔═══════════════════════════════════════════════════════════╗
-║          DATADOG API KEY ENUMERATION TOOL                 ║
-╚═══════════════════════════════════════════════════════════╝
-{Colors.END}""")
+    ██████╗  █████╗ ████████╗ █████╗ ██████╗  ██████╗  ██████╗ 
+    ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔═══██╗██╔════╝ 
+    ██║  ██║███████║   ██║   ███████║██║  ██║██║   ██║██║  ███╗
+    ██║  ██║██╔══██║   ██║   ██╔══██║██║  ██║██║   ██║██║   ██║
+    ██████╔╝██║  ██║   ██║   ██║  ██║██████╔╝╚██████╔╝╚██████╔╝
+    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝ 
+                                                               
+    ███████╗███╗   ██╗██╗   ██╗███╗   ███╗███████╗██████╗      
+    ██╔════╝████╗  ██║██║   ██║████╗ ████║██╔════╝██╔══██╗     
+    █████╗  ██╔██╗ ██║██║   ██║██╔████╔██║█████╗  ██████╔╝     
+    ██╔══╝  ██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══╝  ██╔══██╗     
+    ███████╗██║ ╚████║╚██████╔╝██║ ╚═╝ ██║███████╗██║  ██║     
+    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝     
+{Colors.END}
+{Colors.YELLOW}    ╔══════════════════════════════════════════════════════════╗
+    ║  Datadog API Key Enumeration Tool v{__version__}                  ║
+    ║  Author: {__author__}                                         ║
+    ║  GitHub: github.com/l0lsec                                 ║
+    ╚══════════════════════════════════════════════════════════╝{Colors.END}
+""")
     print_info(f"Using API endpoint: {BASE_URL}")
     
     if not APP_KEY:

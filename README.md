@@ -1,5 +1,21 @@
 # Datadog API Key Enumerator
 
+```
+    ██████╗  █████╗ ████████╗ █████╗ ██████╗  ██████╗  ██████╗ 
+    ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔═══██╗██╔════╝ 
+    ██║  ██║███████║   ██║   ███████║██║  ██║██║   ██║██║  ███╗
+    ██║  ██║██╔══██║   ██║   ██╔══██║██║  ██║██║   ██║██║   ██║
+    ██████╔╝██║  ██║   ██║   ██║  ██║██████╔╝╚██████╔╝╚██████╔╝
+    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝ 
+                                                               
+    ███████╗███╗   ██╗██╗   ██╗███╗   ███╗███████╗██████╗      
+    ██╔════╝████╗  ██║██║   ██║████╗ ████║██╔════╝██╔══██╗     
+    █████╗  ██╔██╗ ██║██║   ██║██╔████╔██║█████╗  ██████╔╝     
+    ██╔══╝  ██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══╝  ██╔══██╗     
+    ███████╗██║ ╚████║╚██████╔╝██║ ╚═╝ ██║███████╗██║  ██║     
+    ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝     
+```
+
 A security reconnaissance tool that enumerates what resources and data a Datadog API key has access to. Useful for security assessments, penetration testing, and validating the principle of least privilege on Datadog API credentials.
 
 ## Features
@@ -18,7 +34,7 @@ A security reconnaissance tool that enumerates what resources and data a Datadog
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/datadogenumerator.git
+git clone https://github.com/l0lsec/datadogenumerator.git
 cd datadogenumerator
 pip install requests
 ```
@@ -124,6 +140,12 @@ For comprehensive enumeration, provide both keys. With only an API key, many rea
 - Python 3.6+
 - `requests` library
 
+## Author
+
+**l0lsec**
+
+- GitHub: [@l0lsec](https://github.com/l0lsec)
+
 ## License
 
 MIT License
@@ -131,4 +153,10 @@ MIT License
 ## Contributing
 
 Contributions welcome! Feel free to submit issues and pull requests.
+
+---
+
+<p align="center">
+  Made with ☕ by <a href="https://github.com/l0lsec">l0lsec</a>
+</p>
 
